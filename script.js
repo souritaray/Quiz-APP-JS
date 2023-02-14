@@ -77,10 +77,16 @@ function getSelected() {
 submitBtn.addEventListener('click', () => {
     if(submitBtn.innerHTML==="NEXT"){
         if(currentQuiz==(quizData.length-1)){
-            quiz.style.height="100px";
+            quiz.style.height="170px";
             quiz.style.backgroundColor="#8e44ad";
             quiz.style.fontSize="60px";
             quiz.innerHTML=`YOUR SCORE IS: ${score}/${quizData.length}`
+            let replay = document.createElement("button");
+            replay.style.fontFamily="cursive";
+            replay.style.color="coral";
+            quiz.appendChild(replay);
+            replay.innerText="REPLAY";
+            replay.addEventListener("click",()=>{location.reload()})
         }
         else{
             currentQuiz=currentQuiz+1;
