@@ -45,8 +45,6 @@ const answerEls=document.querySelectorAll(".answer");
 let currentQuiz = 0
 let score = 0
 
-
-
 loadQuiz();
  
 function loadQuiz() {
@@ -59,8 +57,6 @@ function loadQuiz() {
     answerEls.forEach(e=>{e.checked=false});
     quiz.style.backgroundColor="#5DA3FA";
     submitBtn.innerHTML="SUBMIT";
-    
-   
 }
 
 function deselectAnswers() {
@@ -92,7 +88,6 @@ submitBtn.addEventListener('click', () => {
             currentQuiz=currentQuiz+1;
             loadQuiz();
         }
-       
     }
 
     else{
@@ -107,6 +102,5 @@ submitBtn.addEventListener('click', () => {
             }
         }
     }
-    
     }
     })
