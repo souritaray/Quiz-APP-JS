@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/100030958/221372463-cdce034a-a644-4891
 
 
 ## Live link
-[Quiz aop](https://quiz-souritaray.netlify.app/)
+[Quiz app](https://quiz-souritaray.netlify.app/)
 
 
 ## Contact me on:
